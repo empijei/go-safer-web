@@ -30,8 +30,6 @@ func TestGrantCheck(t *testing.T) {
 }
 
 func TestCheckMust(t *testing.T) {
-	// TODO test that if Grant or Check were never called we always return errors.
-
 	t.Run("with grant", func(t *testing.T) {
 		ctx := context.Background()
 		if _, err := auth.Check(ctx, "a"); err == nil {

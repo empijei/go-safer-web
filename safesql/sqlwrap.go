@@ -1,5 +1,7 @@
 package safesql
 
+// TODO(empijei): embed calls to auth.Must and remove funcs that don't take context.
+
 import (
 	"context"
 	"database/sql"
